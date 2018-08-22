@@ -1,4 +1,4 @@
-“# Budget Management Application
+# Budget Management Application
 
 This is the sample application for Personal Budgmet Management
 
