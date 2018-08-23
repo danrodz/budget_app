@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
+
   def setup
-    ActionMailer::Base.delieveries.clear
+    ActionMailer::Base.deliveries.clear
   end
 
   test "invalid signup information" do
@@ -16,7 +17,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert_template 'users/new'
     assert_select 'div#error_explanation'
     assert_select 'div.field_with_errors'
-    assert_select 'form[action="/signup"]'
   end
 
   test "valid signup information with account activation" do
@@ -44,7 +44,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert user.reload.activated?
     follow_redirect!
     assert_template 'users/show'
-    assert_not flash.nil?
     assert is_logged_in?
   end
 end
