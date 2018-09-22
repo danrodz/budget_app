@@ -5,7 +5,7 @@ This is the sample application for Personal Budgmet Management
 ## License
 
 All source code in the app
-is available jointly under the MIT License.
+is available jointly the MIT License.
 
 ## Getting started
 
