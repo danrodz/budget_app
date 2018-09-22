@@ -5,8 +5,7 @@ This is the sample application for Personal Budgmet Management
 ## License
 
 All source code in the app
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+is available jointly under the MIT License.
 
 ## Getting started
 
